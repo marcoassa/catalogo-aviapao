@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cardápio digital da Padaria Aviapão — Hambúrgueres, lanches autorais, massas, pães, café selecionado e muito mais. Menu de Bordo com sabor de casa." />
+  <meta name="keywords" content="cardápio aviapão, hambúrguer taubaté, pão artesanal, fennec, jaguar, black hawk, pantera, cougar, padaria temática" />
+  <title>Menu de Bordo — Padaria Aviapão</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="page-fade-in">
+
+  <!-- HEADER -->
+  <header id="header" role="banner">
+    <a href="index.html" aria-label="Ir para a página inicial">
+      <img src="assets/logo_branco.png.png" alt="Logo Aviapão" class="nav-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      <span style="display:none; font-family:'Righteous',sans-serif; font-size:1.3rem; color:#fff; letter-spacing:0.08em;">✈ AVIAPÃO</span>
+    </a>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav aria-label="Navegação principal">
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html"             id="nav-inicio">Início</a></li>
+        <li><a href="index.html#historia"    id="nav-historia">Nossa História</a></li>
+        <li><a href="cardapio.html" class="active" id="nav-cardapio">Cardápio</a></li>
+        <li><a href="padocatel.html"         id="nav-padocatel">Padocatel</a></li>
+        <li><a href="buffet.html"            id="nav-buffet">Buffet</a></li>
+        <li><a href="index.html#localizacao" id="nav-localizacao">Localização</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Catálogo de Delícias Aviapão">
+      <p class="page-hero-label" aria-hidden="true">✦ Sabores que Elevam</p>
+      <h1>Catálogo de Delícias - Aviapão</h1>
+      <p>Pães quentinhos, lanches feitos na hora e a conveniência que você precisa no dia a dia!</p>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 1: Pães e Salgados
+    ═══════════════════════════════════════════════════════ -->
+    <section class="categoria-section reveal" aria-labelledby="cat-paes-salgados">
+      <div class="categoria-header">
+        <div class="categoria-icon" aria-hidden="true">🍞</div>
+        <h2 id="cat-paes-salgados">Pães e Salgados</h2>
+        <div class="categoria-bar"></div>
+      </div>
+      <div class="produtos-grid">
+
+        <article class="produto-card lightbox-trigger" id="prod-frances" data-src="assets/prods/pao_frances.png" data-alt="Pão Francês">
+          <div class="produto-card-img">
+            <img src="assets/prods/pao_frances.png" alt="Pão Francês" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Pão Francês</h3>
+            <p>Clássico, crocante e quentinho.</p>
+            <div class="produto-price">R$ 19,50 / Kg</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-paes-queijo" data-src="assets/prods/pao_de_queijo.png" data-alt="Pães de Queijo Diversos">
+          <div class="produto-card-img">
+            <img src="assets/prods/pao_de_queijo.png" alt="Pães de Queijo Diversos" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Pães de Queijo Diversos</h3>
+            <p>Variedades selecionadas de pão de queijo artesanal.</p>
+            <div class="produto-price">R$ 6,85 / 100g</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-focaccia" data-src="assets/prods/focaccia.png" data-alt="Focaccia">
+          <div class="produto-card-img">
+            <img src="assets/prods/focaccia.png" alt="Focaccia" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Focaccia</h3>
+            <p>Massa artesanal italiana com ervas e azeite.</p>
+            <div class="produto-price">R$ 49,90 / Kg</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-salgado-lanche" data-src="assets/prods/salgado_lanche.png" data-alt="Salgado Lanche">
+          <div class="produto-card-img">
+            <img src="assets/prods/salgado_lanche.png" alt="Salgado Lanche (Grande)" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Salgado Lanche (Grande)</h3>
+            <p>Salgados diversos assados, ideais para o seu lanche.</p>
+            <div class="produto-price">R$ 9,90 / Un</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-torta-salgada" data-src="assets/prods/torta_salgada_frango.png" data-alt="Torta Salgada de Frango">
+          <div class="produto-card-img">
+            <img src="assets/prods/torta_salgada_frango.png" alt="Torta de Frango (Fatia)" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Torta de Frango (Fatia)</h3>
+            <p>Torta salgada artesanal com recheio cremoso de frango.</p>
+            <div class="produto-price">R$ 14,90 / Un</div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Outros Pães de Produção Própria -->
+      <div class="avulsos-grid" style="border-top: 1px solid rgba(200,169,110,0.2); padding-top: 1.5rem; margin-top: 1.5rem;">
+        <div class="avulso-item"><span class="avulso-nome">🥖 Pão Australiano</span><span class="avulso-price">R$ 29,90 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">🌭 Pão de Hot Dog</span><span class="avulso-price">R$ 29,90 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">🍔 Pão de Hambúrguer</span><span class="avulso-price">R$ 29,90 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">🥔 Pão de Batata</span><span class="avulso-price">R$ 29,90 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">🥪 Pão Ciabatta</span><span class="avulso-price">R$ 29,90 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">🥖 Baguete Clássica</span><span class="avulso-price">R$ 29,90 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">🥖 Mini Baguete</span><span class="avulso-price">R$ 29,90 / Kg</span></div>
+        
+        <!-- Esfihas e Especiais -->
+        <div class="avulso-item" style="grid-column: 1 / -1; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem; margin-top: 0.5rem; justify-content: center;">
+          <span style="color: var(--accent); font-family: var(--font-heading); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">🥟 Esfihas e Especialidades</span>
+        </div>
+        <div class="avulso-item"><span class="avulso-nome">Esfiha Aberta</span><span class="avulso-price">R$ 3,99 / Un</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Esfirra Turca</span><span class="avulso-price">R$ 8,90 / Un</span></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 2: Bolos e Doces
+    ═══════════════════════════════════════════════════════ -->
+    <section class="categoria-section reveal" aria-labelledby="cat-bolos-doces">
+      <div class="categoria-header">
+        <div class="categoria-icon" aria-hidden="true">🍰</div>
+        <h2 id="cat-bolos-doces">Bolos e Doces</h2>
+        <div class="categoria-bar"></div>
+      </div>
+      <div class="produtos-grid">
+
+        <article class="produto-card lightbox-trigger" id="prod-muffins" data-src="assets/prods/muffins_hangar.png" data-alt="Muffins">
+          <div class="produto-card-img">
+            <img src="assets/prods/muffins_hangar.png" alt="Muffins Artesanais" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Muffins Artesanais</h3>
+            <div class="produto-price">R$ 5,49 / 100g</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-brownie" data-src="assets/prods/brownie_hangar.png" data-alt="Brownie">
+          <div class="produto-card-img">
+            <img src="assets/prods/brownie_hangar.png" alt="Brownie Aviapão" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Brownie Aviapão</h3>
+            <div class="produto-price">R$ 5,49 / 100g</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-torta-fatia" data-src="assets/prods/torta_banoffee_limao.png" data-alt="Torta Doce Fatia">
+          <div class="produto-card-img">
+            <img src="assets/prods/torta_banoffee_limao.png" alt="Fatia de Torta (Banoffee e Limão)" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Torta Doce Fatia</h3>
+            <p>Deliciosas fatias de Banoffee ou Limão.</p>
+            <div class="produto-price">R$ 14,99 / Un</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-donuts" data-src="assets/prods/donuts_hangar.png" data-alt="Donuts">
+          <div class="produto-card-img">
+            <img src="assets/prods/donuts_hangar.png" alt="Donuts Gourmet" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Donuts Gourmet</h3>
+            <div class="produto-price">R$ 10,90 / Un</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-bolo-inteiro" data-src="assets/prods/bolo_hangar.png" data-alt="Bolo Recheado Inteiro">
+          <div class="produto-card-img">
+            <img src="assets/prods/bolo_hangar.png" alt="Bolo Recheado Inteiro" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Bolo Recheado Inteiro</h3>
+            <div class="produto-price">R$ 68,00 / Un</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-bolo-cafe" data-src="assets/prods/bolo_cafe_hangar.png" data-alt="Bolo de Café">
+          <div class="produto-card-img">
+            <img src="assets/prods/bolo_cafe_hangar.png" alt="Bolo de Café" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Bolo de Café</h3>
+            <div class="produto-price">R$ 39,80 / Kg</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 3: Lanches Autorais e Hambúrgueres
+    ═══════════════════════════════════════════════════════ -->
+    <section class="categoria-section reveal" aria-labelledby="cat-hamburgueres">
+      <div class="categoria-header">
+        <div class="categoria-icon" aria-hidden="true">🍔</div>
+        <h2 id="cat-hamburgueres">Hambúrgueres</h2>
+        <div class="categoria-bar"></div>
+      </div>
+      <div class="produtos-grid">
+
+        <article class="produto-card lightbox-trigger" id="prod-xsalada" data-src="assets/prods/x_salada_rua.png" data-alt="X-Salada Aviapão">
+          <div class="produto-card-img">
+            <img src="assets/prods/x_salada_rua.png" alt="X-Salada" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>X-Salada</h3>
+            <p>Pão artesanal, hambúrguer, queijo, alface, tomate e molho especial.</p>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-xegg" data-src="assets/prods/x_egg_rua.png" data-alt="X-Egg Aviapão">
+          <div class="produto-card-img">
+            <img src="assets/prods/x_egg_rua.png" alt="X-Egg" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>X-Egg</h3>
+            <p>Pão artesanal, hambúrguer, queijo, ovo e molho especial da casa.</p>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-xbacon" data-src="assets/prods/x_bacon_rua.png" data-alt="X-Bacon Aviapão">
+          <div class="produto-card-img">
+            <img src="assets/prods/x_bacon_rua.png" alt="X-Bacon" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>X-Bacon</h3>
+            <p>Pão artesanal, hambúrguer, queijo, bacon crocante e molho especial.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 2: LANCHES AUTORAIS
+    ═══════════════════════════════════════════════════════ -->
+    <section class="categoria-section reveal" aria-labelledby="cat-autorais">
+      <div class="categoria-header">
+        <div class="categoria-icon" aria-hidden="true">✈️</div>
+        <h2 id="cat-autorais">Lanches Autorais</h2>
+        <div class="categoria-bar"></div>
+      </div>
+      <p style="color:rgba(255,255,255,0.5); font-size:0.85rem; margin-bottom:1.5rem; font-style:italic;">
+        Criações exclusivas batizadas com nomes dos heróis da aviação 🚁
+      </p>
+      <div class="produtos-grid">
+
+        <article class="produto-card lightbox-trigger" id="prod-fennec" data-src="assets/prods/lanche_fennec_real.png" data-alt="Fennec">
+          <div class="produto-card-img">
+            <img src="assets/prods/lanche_fennec_real.png" alt="Lanche Fennec" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Fennec</h3>
+            <p style="font-style: italic; font-size: 0.85rem; color: #c8a96e; margin-bottom: 0.5rem;">"Leve, rápido e letal"</p>
+            <p>Pão francês, mussarela e requeijão.</p>
+            <div class="produto-price">R$ 7,90</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-pantera" data-src="assets/prods/lanche_pantera_real.png" data-alt="Pantera">
+          <div class="produto-card-img">
+            <img src="assets/prods/lanche_pantera_real.png" alt="Lanche Pantera" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Pantera</h3>
+            <p style="font-style: italic; font-size: 0.85rem; color: #c8a96e; margin-bottom: 0.5rem;">"Versatilidade, multiemprego"</p>
+            <p>Pão francês, mussarela, apresuntado, tomate e orégano.</p>
+            <div class="produto-price">R$ 9,90</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-cougar" data-src="assets/prods/lanche_cougar_real.png" data-alt="Cougar">
+          <div class="produto-card-img">
+            <img src="assets/prods/lanche_cougar_real.png" alt="Lanche Cougar" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Cougar</h3>
+            <p style="font-style: italic; font-size: 0.85rem; color: #c8a96e; margin-bottom: 0.5rem;">"Trator de asas rotativas"</p>
+            <p>Pão francês, mussarela, ovo, tomate e alface.</p>
+            <div class="produto-price">R$ 11,50</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-jaguar" data-src="assets/prods/lanche_jaguar_real.png" data-alt="Jaguar">
+          <div class="produto-card-img">
+            <img src="assets/prods/lanche_jaguar_real.png" alt="Lanche Jaguar" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Jaguar</h3>
+            <p style="font-style: italic; font-size: 0.85rem; color: #c8a96e; margin-bottom: 0.5rem;">"Para grandes problemas, grandes soluções"</p>
+            <p>Pão francês, mussarela, ovo, bacon, tomate e alface.</p>
+            <div class="produto-price">R$ 13,90</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-blackhawk" data-src="assets/prods/lanche_blackhawk_real.png" data-alt="Black Hawk">
+          <div class="produto-card-img">
+            <img src="assets/prods/lanche_blackhawk_real.png" alt="Lanche Black Hawk" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Black Hawk</h3>
+            <p style="font-style: italic; font-size: 0.85rem; color: #c8a96e; margin-bottom: 0.5rem;">"A máquina de guerra"</p>
+            <p>Pão australiano, queijo minas derretido, apresuntado, bacon, tomate e alface.</p>
+            <div class="produto-price">R$ 15,90</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 4: Lanches Tradicionais e Porções
+    ═══════════════════════════════════════════════════════ -->
+    <section class="categoria-section reveal" aria-labelledby="cat-tradicionais-porcoes">
+      <div class="categoria-header">
+        <div class="categoria-icon" aria-hidden="true">🍟</div>
+        <h2 id="cat-tradicionais-porcoes">Lanches Tradicionais e Porções</h2>
+        <div class="categoria-bar"></div>
+      </div>
+      <div class="produtos-grid">
+
+        <article class="produto-card lightbox-trigger" id="prod-misto" data-src="assets/prods/misto_hangar.png" data-alt="Misto Quente">
+          <div class="produto-card-img">
+            <img src="assets/prods/misto_hangar.png" alt="Misto Quente" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Misto Quente</h3>
+            <div class="produto-price">R$ 9,00 / Un</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-batata-g" data-src="assets/prods/batata_frita.jpg" data-alt="Batata Frita Grande">
+          <div class="produto-card-img">
+            <img src="assets/prods/batata_frita.jpg" alt="Porção de Batata Frita Grande" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Porção de Batata Frita Grande</h3>
+            <div class="produto-price">R$ 23,34 / Un</div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="avulsos-grid" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; margin-top: 1.5rem;">
+        <div class="avulso-item"><span class="avulso-nome">🧈 Pão com Manteiga</span><span class="avulso-price">R$ 3,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">🥩 Pão com Mortadela</span><span class="avulso-price">R$ 7,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">🥚 Pão com Ovo</span><span class="avulso-price">R$ 7,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">🧀 Pão com Queijo e Ovo</span><span class="avulso-price">R$ 9,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">🥛 Pão com Requeijão</span><span class="avulso-price">R$ 6,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">🍯 Salame com Mel</span><span class="avulso-price">R$ 12,50</span></div>
+        
+        <!-- Pratos de Ovos e Especiais -->
+        <div class="avulso-item" style="grid-column: 1 / -1; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem; margin-top: 0.5rem; justify-content: center;">
+          <span style="color: var(--accent); font-family: var(--font-heading); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">🍳 Pratos de Ovos e Especiais</span>
+        </div>
+        <div class="avulso-item"><span class="avulso-nome">Omelete Completo</span><span class="avulso-price">R$ 12,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Ovos Mexidos</span><span class="avulso-price">R$ 12,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Crepioca</span><span class="avulso-price">R$ 18,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Tapioca Recheada</span><span class="avulso-price">R$ 18,00</span></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 5: Pizzas Artesanais
+    ═══════════════════════════════════════════════════════ -->
+    <section class="categoria-section reveal" aria-labelledby="cat-pizzas">
+      <div class="categoria-header">
+        <div class="categoria-icon" aria-hidden="true">🍕</div>
+        <h2 id="cat-pizzas">Pizzas Artesanais</h2>
+        <div class="categoria-bar"></div>
+      </div>
+
+      <div class="avulsos-grid">
+        <!-- Tradicionais -->
+        <div class="avulso-item" style="grid-column: 1 / -1; border-bottom: 2px solid var(--accent); margin-bottom: 1rem; padding-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #fff; font-family: var(--font-heading); font-size: 1.1rem; text-transform: uppercase;">Tradicionais</span>
+          <span style="color: var(--accent); font-weight: bold; font-family: var(--font-heading);">R$ 39,90</span>
+        </div>
+        <div class="avulso-item"><span class="avulso-nome">Muçarela</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Calabresa</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Portuguesa</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Bacon com Milho</span></div>
+
+        <!-- Saudáveis -->
+        <div class="avulso-item" style="grid-column: 1 / -1; border-bottom: 2px solid var(--accent); margin: 2rem 0 1rem; padding-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #fff; font-family: var(--font-heading); font-size: 1.1rem; text-transform: uppercase;">Saudáveis</span>
+          <span style="color: var(--accent); font-weight: bold; font-family: var(--font-heading);">R$ 38,90</span>
+        </div>
+        <div class="avulso-item"><span class="avulso-nome">Brócolis com Bacon</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Abobrinha com Parmesão</span></div>
+
+        <!-- Premium -->
+        <div class="avulso-item" style="grid-column: 1 / -1; border-bottom: 2px solid var(--accent); margin: 2rem 0 1rem; padding-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
+          <span style="color: #fff; font-family: var(--font-heading); font-size: 1.1rem; text-transform: uppercase;">Premium</span>
+          <span style="color: var(--accent); font-weight: bold; font-family: var(--font-heading);">R$ 42,90</span>
+        </div>
+        <div class="avulso-item"><span class="avulso-nome">Marguerita</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Quatro Queijos</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Tomate Seco com Rúcula</span></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 6: Cafeteria e Bebidas Quentes
+    ═══════════════════════════════════════════════════════ -->
+    <section class="categoria-section reveal" aria-labelledby="cat-cafeteria">
+      <div class="categoria-header">
+        <div class="categoria-icon" aria-hidden="true">☕</div>
+        <h2 id="cat-cafeteria">Cafeteria e Bebidas Quentes</h2>
+        <div class="categoria-bar"></div>
+      </div>
+      
+      <!-- Itens com Foto -->
+      <div class="produtos-grid" style="margin-bottom: 2rem;">
+        <article class="produto-card lightbox-trigger" id="prod-cappuccino" data-src="assets/prods/cappuccino_hangar.png" data-alt="Cappuccino">
+          <div class="produto-card-img">
+            <img src="assets/prods/cappuccino_hangar.png" alt="Polo Cappuccino 200ml" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Polo Cappuccino 200ml</h3>
+            <div class="produto-price">R$ 10,00 / Un</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-cafe-gelado" data-src="assets/prods/cafe_gelado_hangar.png" data-alt="Café Gelado">
+          <div class="produto-card-img">
+            <img src="assets/prods/cafe_gelado_hangar.png" alt="Café Gelado 300ml" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Café Gelado 300ml</h3>
+            <div class="produto-price">R$ 12,90 / Un</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-frape" data-src="assets/prods/frape_hangar.png" data-alt="Frapê">
+          <div class="produto-card-img">
+            <img src="assets/prods/frape_hangar.png" alt="Frapê" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Frapê</h3>
+            <div class="produto-price">R$ 15,90 / Un</div>
+          </div>
+        </article>
+
+        <article class="produto-card lightbox-trigger" id="prod-cha-matte" data-src="assets/prods/cha_matte_hangar.png" data-alt="Chá Matte">
+          <div class="produto-card-img">
+            <img src="assets/prods/cha_matte_hangar.png" alt="Chá Matte 300ml" loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';" />
+          </div>
+          <div class="produto-card-body">
+            <h3>Chá Matte 300ml</h3>
+            <div class="produto-price">R$ 5,90 / Un</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="avulsos-grid" style="border-top: 1px solid rgba(200,169,110,0.2); padding-top: 1.5rem;">
+        <!-- Linha Polo Cafés -->
+        <div class="avulso-item"><span class="avulso-nome">Polo Café Forte 80ml</span><span class="avulso-price">R$ 4,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Polo Café Suave 80ml</span><span class="avulso-price">R$ 4,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Polo Café com Leite 200ml</span><span class="avulso-price">R$ 6,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Polo Pingado 200ml</span><span class="avulso-price">R$ 6,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Polo Cappuccino Avelã 200ml</span><span class="avulso-price">R$ 12,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Polo Mocaccino 200ml</span><span class="avulso-price">R$ 11,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Polo Chocolate Quente 200ml</span><span class="avulso-price">R$ 9,00</span></div>
+        
+        <!-- Chás e Bebidas Especiais -->
+        <div class="avulso-item"><span class="avulso-nome">Chá Matte Copo 300ml</span><span class="avulso-price">R$ 5,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Garrafa Chá Matte 300ml</span><span class="avulso-price">R$ 6,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Chai Latte Especial</span><span class="avulso-price">R$ 12,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Chá Matte Refil</span><span class="avulso-price">R$ 15,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Café Coado 180ml</span><span class="avulso-price">R$ 4,97</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Café com Leite Tradicional 200ml</span><span class="avulso-price">R$ 6,94</span></div>
+      </div>
+    </section>
+
+
+
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 7: Bebidas Geladas e Sucos
+    ═══════════════════════════════════════════════════════ -->
+    <section class="categoria-section reveal" aria-labelledby="cat-bebidas-geladas">
+      <div class="categoria-header">
+        <div class="categoria-icon" aria-hidden="true">🥤</div>
+        <h2 id="cat-bebidas-geladas">Bebidas Geladas e Sucos</h2>
+        <div class="categoria-bar"></div>
+      </div>
+
+      <div class="avulsos-grid">
+        <!-- Águas -->
+        <div class="avulso-item" style="grid-column: 1 / -1; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem; margin-top: 0.5rem; justify-content: center;">
+          <span style="color: var(--accent); font-family: var(--font-heading); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">💧 Águas Minerais</span>
+        </div>
+        <div class="avulso-item"><span class="avulso-nome">Água Mineral sem Gás 500ml</span><span class="avulso-price">R$ 5,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Água Mineral com Gás 500ml</span><span class="avulso-price">R$ 5,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Água Mineral sem Gás 1,5L</span><span class="avulso-price">R$ 9,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Água Mineral com Gás 1,5L</span><span class="avulso-price">R$ 9,00</span></div>
+
+        <!-- Refrigerantes -->
+        <div class="avulso-item" style="grid-column: 1 / -1; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem; margin-top: 0.5rem; justify-content: center;">
+          <span style="color: var(--accent); font-family: var(--font-heading); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">🥤 Refrigerantes</span>
+        </div>
+        <div class="avulso-item"><span class="avulso-nome">Coca-Cola Lata 350ml</span><span class="avulso-price">R$ 7,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Coca-Cola sem Açúcar Lata 350ml</span><span class="avulso-price">R$ 7,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Coca-Cola PET 600ml / Zero 600ml</span><span class="avulso-price">R$ 9,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Coca-Cola PET 1L</span><span class="avulso-price">R$ 12,30</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Coca-Cola PET 1,5L</span><span class="avulso-price">R$ 13,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Coca-Cola sem Açúcar PET 1,5L</span><span class="avulso-price">R$ 14,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Coca-Cola PET 2L</span><span class="avulso-price">R$ 16,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Coca-Cola sem Açúcar PET 2L</span><span class="avulso-price">R$ 17,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Guaraná Antarctica Lata 350ml</span><span class="avulso-price">R$ 7,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Guaraná Antarctica Zero Lata 350ml</span><span class="avulso-price">R$ 7,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Guaraná Antarc. 600ml / sem Açúcar</span><span class="avulso-price">R$ 8,50 / R$ 8,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Guaraná Antarc. PET 1,5L / Zero 1,5L</span><span class="avulso-price">R$ 13,90 / R$ 14,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Guaraná Antarc. PET 2L / Zero 2L</span><span class="avulso-price">R$ 14,50 / R$ 15,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Sprite Lata 350ml / sem Açúcar</span><span class="avulso-price">R$ 6,50 / R$ 7,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Sprite Fresh Lemon 510ml / 1,5L</span><span class="avulso-price">R$ 8,50 / R$ 12,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Fanta Laranja / Guaraná Lata 350ml</span><span class="avulso-price">R$ 6,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Fanta Laranja 600ml</span><span class="avulso-price">R$ 9,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Schweppes Citrus Lata 350ml</span><span class="avulso-price">R$ 7,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Soda Limonada Antarctica Lata 350m</span><span class="avulso-price">R$ 7,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Soda Italiana 300ml</span><span class="avulso-price">R$ 11,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Kuat Guaraná Lata 350ml</span><span class="avulso-price">R$ 6,50</span></div>
+
+        <!-- Guaraviton -->
+        <div class="avulso-item" style="grid-column: 1 / -1; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem; margin-top: 0.5rem; justify-content: center;">
+          <span style="color: var(--accent); font-family: var(--font-heading); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">⚡ Guaraviton e Naturais</span>
+        </div>
+        <div class="avulso-item"><span class="avulso-nome">Guaraviton (Catuaba, Gengibre, Açaí) 500ml</span><span class="avulso-price">R$ 5,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Suco de Laranja Natural 300ml</span><span class="avulso-price">R$ 12,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Suco de Acerola Natural 300ml</span><span class="avulso-price">R$ 13,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Vitamina de Banana com Aveia 300ml</span><span class="avulso-price">R$ 8,90</span></div>
+
+        <!-- Chopps -->
+        <div class="avulso-item" style="grid-column: 1 / -1; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem; margin-top: 0.5rem; justify-content: center;">
+          <span style="color: var(--accent); font-family: var(--font-heading); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">🍺 Chopps Artesanais</span>
+        </div>
+        <div class="avulso-item"><span class="avulso-nome">Chopp Pilsen 330ml / 500ml</span><span class="avulso-price">R$ 8,90 / R$ 14,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Chopp Witbier 330ml / 500ml</span><span class="avulso-price">R$ 11,90 / R$ 22,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Chopp Fruit Lager Caju 330ml / 500ml</span><span class="avulso-price">R$ 11,90 / R$ 16,90</span></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 8: Laticínios e Iogurtes
+    ═══════════════════════════════════════════════════════ -->
+    <section class="categoria-section reveal" aria-labelledby="cat-laticinios">
+      <div class="categoria-header">
+        <div class="categoria-icon" aria-hidden="true">🥛</div>
+        <h2 id="cat-laticinios">Laticínios e Iogurtes</h2>
+        <div class="categoria-bar"></div>
+      </div>
+
+      <div class="avulsos-grid">
+        <!-- Iogurtes -->
+        <div class="avulso-item"><span class="avulso-nome">Iogurte Morango Comevap 180g</span><span class="avulso-price">R$ 3,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Iogurte Tutti-Frutti Yuc Mix 180g</span><span class="avulso-price">R$ 3,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Iogurte Natural Integral 170g</span><span class="avulso-price">R$ 4,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Iogurte Desnatado com Mel 170g</span><span class="avulso-price">R$ 4,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Iogurte Morango Copo 170g</span><span class="avulso-price">R$ 5,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Leite Fermentado Comevap 170g</span><span class="avulso-price">R$ 4,10</span></div>
+
+        <!-- Shakes e Proteínas -->
+        <div class="avulso-item" style="grid-column: 1 / -1; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem; margin-top: 0.5rem; justify-content: center;">
+          <span style="color: var(--accent); font-family: var(--font-heading); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">💪 Shakes e Proteínas (Whey)</span>
+        </div>
+        <div class="avulso-item"><span class="avulso-nome">YoPRO UHT (Vários sabores) 15g Proteína</span><span class="avulso-price">R$ 10,90</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Piracanjuba Whey (Vários sabores) 15g Prot.</span><span class="avulso-price">R$ 7,00</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Piracanjuba Whey 23g Proteína</span><span class="avulso-price">R$ 8,00</span></div>
+
+        <!-- Achocolatados e Variados -->
+        <div class="avulso-item" style="grid-column: 1 / -1; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem; margin-top: 0.5rem; justify-content: center;">
+          <span style="color: var(--accent); font-family: var(--font-heading); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">🍫 Achocolatados e Variados</span>
+        </div>
+        <div class="avulso-item"><span class="avulso-nome">Leite com Achocolatado 300ml</span><span class="avulso-price">R$ 6,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Bebida Láctea Nescau UHT 180ml</span><span class="avulso-price">R$ 4,20</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Bebida Láctea Danette 200ml</span><span class="avulso-price">R$ 4,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Toddynho Levinho 200ml</span><span class="avulso-price">R$ 4,50</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Toddynho Tradicional 200ml</span><span class="avulso-price">R$ 5,15</span></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 9: Frios e Queijos (Pesados na hora)
+    ═══════════════════════════════════════════════════════ -->
+    <section class="categoria-section reveal" aria-labelledby="cat-frios">
+      <div class="categoria-header">
+        <div class="categoria-icon" aria-hidden="true">🧀</div>
+        <h2 id="cat-frios">Frios e Queijos</h2>
+        <div class="categoria-bar"></div>
+      </div>
+
+      <div class="avulsos-grid">
+        <div class="avulso-item"><span class="avulso-nome">Mortadela Tradicional / Defumada</span><span class="avulso-price">R$ 19,90 / R$ 24,90 (Kg)</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Presunto Cozido</span><span class="avulso-price">R$ 48,90 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Queijo Muçarela</span><span class="avulso-price">R$ 59,90 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Queijo Minas Frescal</span><span class="avulso-price">R$ 68,90 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Queijo Parmesão</span><span class="avulso-price">R$ 72,91 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Queijo Gorgonzola</span><span class="avulso-price">R$ 142,90 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Salame Italiano</span><span class="avulso-price">R$ 109,90 / Kg</span></div>
+        <div class="avulso-item"><span class="avulso-nome">Salame Ceratti Defumado 100g</span><span class="avulso-price">R$ 26,90 / Un</span></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 10: Mini Mercearia e Conveniência
+    ═══════════════════════════════════════════════════════ -->
+    <!-- ══════════════════════════════════════════════════════
+         CATEGORIA 10: Mini Mercearia e Conveniência
+    ═══════════════════════════════════════════════════════ -->
+    <section class="categoria-section reveal" aria-labelledby="cat-mercearia">
+      <div class="categoria-header">
+        <div class="categoria-icon" aria-hidden="true">🛒</div>
+        <h2 id="cat-mercearia">Mini Mercearia e Conveniência</h2>
+        <div class="categoria-bar"></div>
+      </div>
+
+      <div class="glass" style="padding: 2rem; border-radius: var(--radius); border: 1px solid var(--metal-border);">
+        <p style="color: var(--accent); font-family: var(--font-heading); font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2rem; text-align: center;">
+          ⛽ Itens essenciais para sua despensa e casa
+        </p>
+        
+        <div class="mercearia-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem;">
+          
+          <!-- Alimentação / Despensa -->
+          <div>
+            <h3 style="font-size: 1rem; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">🥫 Alimentação e Despensa</h3>
+            <div class="avulsos-grid" style="grid-template-columns: 1fr;">
+              <div class="avulso-item"><span class="avulso-nome">Goma de Tapioca Pronta Da Terrinha 1kg</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Achocolatado em Pó Toddy Original 370g</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Pipoca Yoki (Manteiga, Bacon, Presunto)</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Catchup Cepera PET 400g Tradicional</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Maionese Hellmann's 250g</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Farofa Yoki Caseirissima 200g Cebola</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Farinha de Trigo Renata (Integral / Especial)</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Leite Integral Italac 1L</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Fermento em Pó Dr. Benta 100g</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Mistura para Bolo Italac 400g</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Gelatina Uva Dr. Oetker 20g</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Chocolate Quente em Pó Altezze 200g</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Vinagre de Álcool Vitalia 750ml</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Sal Grosso Cisne / Lebre 1kg</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Macarrão Dona Benta com Ovos 500g</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Água Mineral 20L Maxi Água</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Óleo de Soja 900ml</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Carvão Arco-Íris 2,5kg</span><span class="avulso-price">✔</span></div>
+            </div>
+          </div>
+
+          <!-- Higiene e Limpeza -->
+          <div>
+            <h3 style="font-size: 1rem; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">🧼 Higiene e Limpeza</h3>
+            <div class="avulsos-grid" style="grid-template-columns: 1fr;">
+              <div class="avulso-item"><span class="avulso-nome">Sabão / Sabonete / Amaciante</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Papel Higiênico VIP 4 rolos</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Creme Dental / Band-Aid</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Saco de lixo / Toalha de papel</span><span class="avulso-price">✔</span></div>
+              <div class="avulso-item"><span class="avulso-nome">Guardanapo / Detergente em pó</span><span class="avulso-price">✔</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé Final -->
+    <div class="text-center" style="padding: 4rem 1rem 6rem;">
+      <p style="color:rgba(255,255,255,0.6); font-size: 1.1rem; max-width: 650px; margin: 0 auto 2.5rem; line-height: 1.6;">
+        "Estes são apenas nossos destaques! Venha nos visitar e conheça nossa linha completa de pães, biscoitos, sorvetes, vinhos e muito mais."
+      </p>
+      <a
+        href="https://wa.me/5512996167979?text=Ol%C3%A1%21+Gostaria+de+fazer+um+pedido+do+card%C3%A1pio+padr%C3%A3o."
+        class="btn btn-whatsapp"
+        id="cta-pedir-cardapio"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fazer pedido pelo WhatsApp"
+      >
+        <svg viewBox="0 0 24 24" width="18" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Fazer Pedido por WhatsApp
+      </a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER COMPLETO -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-grid container" style="padding-top:3rem;">
+
+      <!-- Marca -->
+      <div class="footer-brand">
+        <img src="assets/logo_branco.png.png" alt="Logo Aviapão" class="footer-logo" onerror="this.style.display='none';" />
+        <p>Padaria temática de aviação militar, nascida em outubro de 2024 no coração do CIMAVEX. Unindo o orgulho de Taubaté com o sabor de casa.</p>
+        <div class="social-links" role="list" aria-label="Redes sociais">
+          <a href="https://www.instagram.com/padariaaviapao1/" target="_blank" rel="noopener noreferrer" class="social-link" id="link-instagram-c" aria-label="Instagram" role="listitem">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/5512996167979" target="_blank" rel="noopener noreferrer" class="social-link" id="link-wpp-social-c" aria-label="WhatsApp" role="listitem" style="background:rgba(37,211,102,0.1); border-color:rgba(37,211,102,0.3);">
+            <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:#25D366;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navegação -->
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html#historia">Nossa História</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="padocatel.html">Padocatel</a></li>
+          <li><a href="buffet.html">Buffet</a></li>
+          <li><a href="index.html#localizacao">Localização</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div class="footer-col footer-col-contact">
+        <h4>Contato</h4>
+        <div class="footer-contact-list">
+          <a href="https://wa.me/5512996167979?text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+Padaria+Aviap%C3%A3o." class="footer-contact-item" target="_blank" rel="noopener noreferrer" id="link-wpp-footer-c">
+            <span class="footer-contact-icon wpp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>
+            <span class="footer-contact-text"><strong>WhatsApp</strong>(12) 99616-7979</span>
+          </a>
+          <a href="https://www.instagram.com/padariaaviapao1/" class="footer-contact-item" target="_blank" rel="noopener noreferrer" id="link-inst-footer-c">
+            <span class="footer-contact-icon inst"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>
+            <span class="footer-contact-text"><strong>Instagram</strong>@padariaaviapao1</span>
+          </a>
+          <a href="https://maps.app.goo.gl/nz17kppYzpH5Htuy9" class="footer-contact-item" target="_blank" rel="noopener noreferrer" id="link-addr-footer-c">
+            <span class="footer-contact-icon addr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+            <span class="footer-contact-text"><strong>Endereço</strong>Est. Municipal dos Remédios, 2135 — Taubaté/SP</span>
+          </a>
+          <span class="footer-contact-item" style="cursor:default;">
+            <span class="footer-contact-icon cnpj"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.36C18 2.53 15.47 0 12 0S6 2.53 6 4.64c0 .48.11.92.18 1.36H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-8-4c1.34 0 2 .73 2 1.36 0 .63-.66 1.36-2 1.36s-2-.73-2-1.36C10 2.73 10.66 2 12 2zM12 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm6 5H6v-.57c0-1.98 4-3.07 6-3.07s6 1.09 6 3.07V18z"/></svg></span>
+            <span class="footer-contact-text"><strong>CNPJ</strong>55.673.449/0001-02</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <div class="footer-col">
+        <h4>Fale Conosco</h4>
+        <form id="contact-form-c" class="contact-form" action="https://formsubmit.co/marcoassa@gmail.com" method="POST" aria-label="Formulário de contato">
+          <input type="hidden" name="_subject" value="Novo contato pelo Cardápio Aviapão" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+          <input type="text" name="_honey" style="display:none;" tabindex="-1" />
+          <div class="form-field">
+            <label for="contact-nome-c">Nome</label>
+            <input type="text" id="contact-nome-c" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="form-field">
+            <label for="contact-email-c">E-mail</label>
+            <input type="email" id="contact-email-c" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-field">
+            <label for="contact-msg-c">Mensagem</label>
+            <textarea id="contact-msg-c" name="mensagem" rows="3" placeholder="Sua mensagem..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="btn-enviar-c">✈ Enviar Mensagem</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© 2024–2026 Padaria Aviapão · Todos os direitos reservados.</p>
+      <p style="margin-top:0.3rem; line-height:1.4;">
+        As imagens são meramente ilustrativas. A Aviapão se reserva ao direito de modificar os produtos sem aviso prévio.
+      </p>
+      <p style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+        <span style="color:rgba(255,255,255,0.25);">CNPJ 55.673.449/0001-02</span>
+        <a href="https://maps.app.goo.gl/nz17kppYzpH5Htuy9" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.25); transition:color 0.3s;">Taubaté – SP · CIMAVEX</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" role="dialog" aria-label="Imagem em tamanho completo" aria-modal="true">
+    <button id="lightbox-close" aria-label="Fechar">✕</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <!-- WhatsApp flutuante -->
+  <a
+    href="https://wa.me/5512996167979?text=Ol%C3%A1%21+Gostaria+de+fazer+um+pedido+do+card%C3%A1pio+padr%C3%A3o."
+    class="whatsapp-float"
+    id="btn-wpp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Fale pelo WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Padaria Aviapão — A padaria temática de aviação militar de Taubaté. Nascida do sonho de voar e servir, unindo tradição, qualidade e sabor de casa." />
+  <meta name="keywords" content="padaria, aviapão, taubaté, aviação militar, café, lanches, pães artesanais, CIMAVEX" />
+  <meta property="og:title" content="Padaria Aviapão — Nascida do Sonho de Voar e Servir" />
+  <meta property="og:description" content="A padaria temática de aviação militar de Taubaté. Qualidade premium, ambiente único e o sabor de casa." />
+  <meta property="og:type" content="website" />
+  <title>Padaria Aviapão — Nascida do Sonho de Voar e Servir</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="page-fade-in">
+
+  <!-- ═══════════════════════════════════════════════════════
+       HEADER — GLASSMORPHISM STICKY
+  ════════════════════════════════════════════════════════ -->
+  <header id="header" role="banner">
+    <a href="index.html" aria-label="Ir para a página inicial">
+      <!-- Logo branco (versão transparente) -->
+      <img
+        src="assets/logo_branco.png.png"
+        alt="Padaria Aviapão — Logo"
+        class="nav-logo"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+      />
+      <!-- Fallback texto caso logo não carregue -->
+      <span style="display:none; font-family:'Righteous',sans-serif; font-size:1.3rem; color:#fff; letter-spacing:0.08em;">
+        ✈ AVIAPÃO
+      </span>
+    </a>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav aria-label="Navegação principal">
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html#hero"     class="active" id="nav-inicio">Início</a></li>
+        <li><a href="index.html#historia"          id="nav-historia">Nossa História</a></li>
+        <li><a href="cardapio.html"                id="nav-cardapio">Cardápio</a></li>
+        <li><a href="padocatel.html"               id="nav-padocatel">Padocatel</a></li>
+        <li><a href="buffet.html"                  id="nav-buffet">Buffet</a></li>
+        <li><a href="index.html#localizacao"       id="nav-localizacao">Localização</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SNAP SCROLL CONTAINER (HOME)
+  ════════════════════════════════════════════════════════ -->
+  <main id="snap-home" class="snap-container" role="main">
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  SEÇÃO 1 — HERO                                  ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="hero" class="snap-section" aria-label="Destaque principal">
+
+      <!-- Parallax background -->
+      <div class="hero-bg" id="hero-parallax" role="img" aria-label="Padaria com temática de aviação militar"></div>
+      <div class="hero-overlay"></div>
+
+      <!-- Conteúdo central -->
+      <div class="hero-content">
+        <span class="hero-badge" aria-hidden="true">✦ Padaria Temática · Taubaté–SP ✦</span>
+
+        <!-- Logo hero (grande, flutuando) -->
+        <img
+          src="assets/logo_branco.png.png"
+          alt="Aviapão Padaria"
+          class="hero-logo"
+          id="hero-logo"
+          onerror="this.outerHTML='<h1 style=\'font-family:Righteous,sans-serif;font-size:clamp(3rem,8vw,6rem);letter-spacing:0.1em;color:#fff;\'>✈ AVIAPÃO</h1>'"
+        />
+
+        <h1 class="hero-title">Nascida do Sonho de Voar e Servir</h1>
+        <p class="hero-slogan">A sua padaria.</p>
+
+        <div class="hero-ctas">
+          <a
+            href="cardapio.html"
+            class="btn btn-primary"
+            id="cta-cardapio"
+            aria-label="Ver o cardápio completo"
+          >
+            <svg viewBox="0 0 24 24" width="18" fill="currentColor" aria-hidden="true">
+              <path d="M8.1 13.34l2.83-2.83L3.91 3.5a4.01 4.01 0 000 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"/>
+            </svg>
+            Ver Cardápio
+          </a>
+          <a
+            href="https://wa.me/5512996167979?text=Ol%C3%A1%2C+vim+pelo+site.+Gostaria+de+mais+informa%C3%A7%C3%B5es%21"
+            class="btn btn-outline"
+            id="cta-pedido-hero"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Fazer pedido pelo WhatsApp"
+          >
+            <svg viewBox="0 0 24 24" width="18" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Entrar em contato
+          </a>
+        </div>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Role para baixo</span>
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  SEÇÃO 2 — NOSSA HISTÓRIA                        ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="historia" class="snap-section" aria-label="Nossa história">
+      <div class="historia-grid">
+
+        <!-- Texto -->
+        <div class="historia-text">
+          <span class="label" aria-hidden="true">✦ Nossa trajetória</span>
+          <h2>A História da<br /><span class="text-accent">Aviapão</span></h2>
+
+          <p class="reveal">
+            Nossa jornada começou em outubro de 2024, atendendo a um desejo antigo das famílias
+            que frequentam o Círculo Militar de Aviação do Exército (CIMAVEX). Mais do que uma
+            padaria, nascemos como uma iniciativa abraçada pela comunidade, que inclusive escolheu
+            nosso nome em votação online.
+          </p>
+
+          <p class="reveal reveal-delay-1">
+            Aviapão une dois orgulhos de Taubaté: a força da Aviação do Exército e a tradição
+            milenar do Pão. Somos o ponto de encontro onde a cultura aeronáutica se mistura ao
+            sabor de casa.
+          </p>
+
+          <p class="reveal reveal-delay-2">
+            O que nos move é o desafio, a inovação e a satisfação de ver sua família feliz à mesa.
+          </p>
+
+          <span class="historia-tag reveal reveal-delay-3">✈ Padaria Temática</span>
+        </div>
+
+        <!-- Imagem do salão / karaokê -->
+        <div class="historia-image reveal">
+          <img
+            src="assets/foto_salao.png"
+            alt="Salão da Padaria Aviapão com clientes"
+            loading="lazy"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#333 0%,#444 100%)'; this.style.display='none';"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  SEÇÃO 3 — NOSSOS PILARES                        ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="pilares" class="snap-section" aria-label="Nossos pilares">
+      <div class="section-full">
+
+        <div class="text-center" style="margin-bottom:1rem;">
+          <p class="page-hero-label" aria-hidden="true">✦ Nossos diferenciais</p>
+          <h2 class="section-title">O que nos move</h2>
+        </div>
+        <div class="section-divider"><span>✦</span></div>
+
+        <!-- 4 cards dos pilares -->
+        <div class="pilares-grid container">
+
+          <!-- Pilar 1: Produtos de Qualidade -->
+          <article class="pilar-card reveal" id="pilar-qualidade">
+            <div class="pilar-card-img">
+              <img
+                src="assets/foto_equipe.jpg"
+                alt="Equipe da Padaria Aviapão"
+                loading="lazy"
+                onerror="this.parentElement.style.background='#333'; this.style.display='none';"
+              />
+            </div>
+            <div class="pilar-card-body">
+              <div class="pilar-number">01 — QUALIDADE</div>
+              <h3>Produtos de Qualidade</h3>
+              <p>Nossos fornecedores e parceiros são escolhidos por critérios rígidos de qualidade, sempre pensando em trazer o melhor para nossos clientes por um preço justo.</p>
+            </div>
+          </article>
+
+          <!-- Pilar 2: Alta Qualidade, Preço Justo -->
+          <article class="pilar-card reveal reveal-delay-1" id="pilar-preco">
+            <div class="pilar-card-img">
+              <img
+                src="assets/foto_paes_marquespan.jpg"
+                alt="Pães Marquespan da Aviapão"
+                loading="lazy"
+                onerror="this.parentElement.style.background='#333'; this.style.display='none';"
+              />
+            </div>
+            <div class="pilar-card-body">
+              <div class="pilar-number">02 — CUSTO-BENEFÍCIO</div>
+              <h3>Alta Qualidade, Preço Justo</h3>
+              <p>Acreditamos que qualidade premium não deve ser privilégio de poucos. Nossos pães e produtos entregam excelência com preços acessíveis para toda a família.</p>
+            </div>
+          </article>
+
+          <!-- Pilar 3: Ambiente Temático -->
+          <article class="pilar-card reveal reveal-delay-2" id="pilar-ambiente">
+            <div class="pilar-card-img">
+              <img
+                src="assets/foto_interior.jpg"
+                alt="Interior temático da Padaria Aviapão"
+                loading="lazy"
+                onerror="this.parentElement.style.background='#333'; this.style.display='none';"
+              />
+            </div>
+            <div class="pilar-card-body">
+              <div class="pilar-number">03 — EXPERIÊNCIA</div>
+              <h3>Ambiente Temático</h3>
+              <p>Cada detalhe do nosso espaço foi pensado para imergir você no universo da aviação militar, criando uma experiência única e memorável a cada visita.</p>
+            </div>
+          </article>
+
+          <!-- Pilar 4: De Família para Família -->
+          <article class="pilar-card reveal reveal-delay-3" id="pilar-familia">
+            <div class="pilar-card-img">
+              <img
+                src="assets/foto_familia.png"
+                alt="Família na Padaria Aviapão"
+                loading="lazy"
+                onerror="this.parentElement.style.background='#333'; this.style.display='none';"
+              />
+            </div>
+            <div class="pilar-card-body">
+              <div class="pilar-number">04 — FAMÍLIA</div>
+              <h3>De Família para Família</h3>
+              <p>Nossos serviços são planejados para atender a família, porque também somos uma família que busca por estabelecimentos adequados às nossas necessidades diárias.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Banner da equipe completa -->
+        <div class="team-banner-wrapper reveal container" style="margin-top: 6rem; padding: 0 2rem;">
+          <h3 style="text-align: center; font-family: var(--font-heading); font-size: 1.2rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.5rem;">
+            ✈ Nossa Tripulação Pronta para Servir
+          </h3>
+          <div class="team-banner" style="margin-top: 0; width: 100%;">
+            <img
+              src="assets/foto_equipe_completa.png"
+              alt="Nossa tripulação completa da Padaria Aviapão"
+              loading="lazy"
+              onerror="this.parentElement.style.background='#2a2a2b'; this.style.display='none';"
+            />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ╔══════════════════════════════════════════════════╗
+         ║  SEÇÃO 4 — LOCALIZAÇÃO                           ║
+         ╚══════════════════════════════════════════════════╝ -->
+    <section id="localizacao" class="snap-section" aria-label="Localização e horários">
+      <div class="section-full" style="background:#202021;">
+
+        <div class="text-center container" style="padding-top:5rem; padding-bottom:2rem;">
+          <p class="page-hero-label" aria-hidden="true">✦ Venha nos visitar</p>
+          <h2 class="section-title">Localização &amp; Horários</h2>
+        </div>
+        <div class="section-divider container"><span>✦</span></div>
+
+        <div class="localizacao-grid container" style="padding-bottom:5rem;">
+
+          <!-- Horários -->
+          <div class="horarios-card reveal">
+            <h3>🕐 Horários de Funcionamento</h3>
+
+            <div class="horario-row">
+              <span class="horario-dia">Autoatendimento</span>
+              <div>
+                <div class="horario-horas">24 horas</div>
+                <div class="horario-tag">Todo dia</div>
+              </div>
+            </div>
+
+            <div class="horario-row">
+              <div>
+                <span class="horario-dia">Seg a Qui</span>
+                <span style="display:block; font-size:0.75rem; color:rgba(255,255,255,0.45); margin-top:2px;">Atendimento presencial</span>
+              </div>
+              <div class="horario-horas">07:30 – 19:30</div>
+            </div>
+
+            <div class="horario-row">
+              <div>
+                <span class="horario-dia">Sexta-feira</span>
+                <span style="display:block; font-size:0.75rem; color:rgba(255,255,255,0.45); margin-top:2px;">Atendimento presencial</span>
+              </div>
+              <div>
+                <div class="horario-horas">07:30 – 22:00</div>
+                <div class="horario-tag">🎵 Festivais</div>
+              </div>
+            </div>
+
+            <div class="horario-row">
+              <span class="horario-dia">Sábado</span>
+              <div class="horario-horas" style="color:rgba(255,255,255,0.35);">Autoatendimento</div>
+            </div>
+
+            <div class="horario-row">
+              <div>
+                <span class="horario-dia">Domingo</span>
+                <span style="display:block; font-size:0.75rem; color:rgba(255,255,255,0.45); margin-top:2px;">Atendimento presencial</span>
+              </div>
+              <div>
+                <div class="horario-horas">08:00 – 14:00</div>
+                <div class="horario-tag">🍽 Com almoço</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Endereço -->
+          <div class="endereco-card">
+            <div class="endereco-info reveal">
+              <h3>📍 Endereço</h3>
+              <p>
+                Estrada Municipal dos Remédios, 2135<br />
+                Granjas Rurais Reunidas São Judas Tadeu<br />
+                Taubaté – SP · CEP 12086-000
+              </p>
+              <a
+                href="https://maps.app.goo.gl/nz17kppYzpH5Htuy9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mapa-btn"
+                id="btn-mapa"
+                aria-label="Abrir localização no Google Maps"
+              >
+                <svg viewBox="0 0 24 24" width="16" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Ver no Google Maps
+              </a>
+            </div>
+
+            <div class="endereco-info reveal reveal-delay-1">
+              <h3>📞 Contato</h3>
+              <p>Para pedidos e informações, fale conosco pelo WhatsApp!</p>
+              <a
+                href="https://wa.me/5512996167979?text=Ol%C3%A1%2C+vim+pelo+site.+Gostaria+de+mais+informa%C3%A7%C3%B5es%21"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp"
+                id="btn-wpp-localizacao"
+                aria-label="Abrir WhatsApp"
+                style="margin-top:0.5rem; display:inline-flex;"
+              >
+                <svg viewBox="0 0 24 24" width="18" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                (12) 99616-7979
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER — dentro do snap-container para ser acessível
+  ════════════════════════════════════════════════════════ -->
+  <footer id="footer" role="contentinfo">
+
+    <!-- Foto acima do rodapé -->
+    <img
+      src="assets/foto_interior.jpg"
+      alt="Balcão de atendimento da Padaria Aviapão"
+      class="footer-balcao"
+      loading="lazy"
+      onerror="this.style.display='none';"
+    />
+
+    <div class="footer-grid container" style="padding-top:3rem;">
+
+      <!-- COL 1: Marca + redes sociais -->
+      <div class="footer-brand">
+        <img
+          src="assets/logo_branco.png.png"
+          alt="Logo Aviapão"
+          class="footer-logo"
+          onerror="this.style.display='none';"
+        />
+        <p>Padaria temática de aviação militar, nascida em outubro de 2024 no coração do CIMAVEX. Unindo o orgulho de Taubaté com o sabor de casa.</p>
+        <div class="social-links" role="list" aria-label="Redes sociais">
+          <a href="https://www.instagram.com/padariaaviapao1/" target="_blank" rel="noopener noreferrer"
+             class="social-link" id="link-instagram" aria-label="Instagram da Aviapão" role="listitem">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/5512996167979" target="_blank" rel="noopener noreferrer"
+             class="social-link" id="link-whatsapp-social" aria-label="WhatsApp da Aviapão" role="listitem"
+             style="background:rgba(37,211,102,0.1); border-color:rgba(37,211,102,0.3);">
+            <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:#25D366;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- COL 2: Navegação -->
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html#historia">Nossa História</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="padocatel.html">Padocatel</a></li>
+          <li><a href="buffet.html">Buffet</a></li>
+          <li><a href="index.html#localizacao">Localização</a></li>
+        </ul>
+      </div>
+
+      <!-- COL 3: Contato -->
+      <div class="footer-col footer-col-contact">
+        <h4>Contato</h4>
+        <div class="footer-contact-list">
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/5512996167979?text=Ol%C3%A1%2C+vim+pelo+site.+Gostaria+de+mais+informa%C3%A7%C3%B5es%21"
+             class="footer-contact-item" target="_blank" rel="noopener noreferrer"
+             id="link-wpp-footer" aria-label="WhatsApp Aviapão">
+            <span class="footer-contact-icon wpp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </span>
+            <span class="footer-contact-text">
+              <strong>WhatsApp</strong>
+              (12) 99616-7979
+            </span>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/padariaaviapao1/" class="footer-contact-item"
+             target="_blank" rel="noopener noreferrer" id="link-inst-footer" aria-label="Instagram Aviapão">
+            <span class="footer-contact-icon inst">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </span>
+            <span class="footer-contact-text">
+              <strong>Instagram</strong>
+              @padariaaviapao1
+            </span>
+          </a>
+
+          <!-- Endereço -->
+          <a href="https://maps.app.goo.gl/nz17kppYzpH5Htuy9" class="footer-contact-item"
+             target="_blank" rel="noopener noreferrer" id="link-addr-footer" aria-label="Endereço no mapa">
+            <span class="footer-contact-icon addr">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </span>
+            <span class="footer-contact-text">
+              <strong>Endereço</strong>
+              Est. Municipal dos Remédios, 2135 — Taubaté/SP
+            </span>
+          </a>
+
+          <!-- CNPJ -->
+          <span class="footer-contact-item" style="cursor:default;">
+            <span class="footer-contact-icon cnpj">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.36C18 2.53 15.47 0 12 0S6 2.53 6 4.64c0 .48.11.92.18 1.36H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-8-4c1.34 0 2 .73 2 1.36 0 .63-.66 1.36-2 1.36s-2-.73-2-1.36C10 2.73 10.66 2 12 2zM12 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm6 5H6v-.57c0-1.98 4-3.07 6-3.07s6 1.09 6 3.07V18z"/></svg>
+            </span>
+            <span class="footer-contact-text">
+              <strong>CNPJ</strong>
+              55.673.449/0001-02
+            </span>
+          </span>
+
+        </div>
+      </div>
+
+      <!-- COL 4: Formulário de contato -->
+      <div class="footer-col">
+        <h4>Fale Conosco</h4>
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formsubmit.co/marcoassa@gmail.com"
+          method="POST"
+          aria-label="Formulário de contato"
+        >
+          <input type="hidden" name="_subject" value="Novo contato pelo Site Aviapão" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+          <input type="text" name="_honey" style="display:none;" tabindex="-1" />
+
+          <div class="form-field">
+            <label for="contact-nome">Nome</label>
+            <input type="text" id="contact-nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
+          </div>
+          <div class="form-field">
+            <label for="contact-email">E-mail</label>
+            <input type="email" id="contact-email" name="email" placeholder="seu@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-field">
+            <label for="contact-msg">Mensagem</label>
+            <textarea id="contact-msg" name="mensagem" rows="3" placeholder="Sua mensagem..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="btn-enviar-contato">✈ Enviar Mensagem</button>
+        </form>
+      </div>
+
+    </div><!-- fim footer-grid -->
+
+    <!-- Rodapé inferior -->
+    <div class="footer-bottom container">
+      <p>© 2024–2026 Padaria Aviapão · Todos os direitos reservados.</p>
+      <p style="margin-top:0.3rem; line-height:1.4;">
+        As imagens são meramente ilustrativas. A Aviapão se reserva ao direito de modificar os produtos sem aviso prévio.
+      </p>
+      <p style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+        <span style="color:rgba(255,255,255,0.25);">CNPJ 55.673.449/0001-02</span>
+        <a href="https://maps.app.goo.gl/nz17kppYzpH5Htuy9" target="_blank" rel="noopener noreferrer"
+           style="color:rgba(255,255,255,0.25); transition:color 0.3s;" aria-label="Endereço no mapa">
+          Taubaté – SP · CIMAVEX
+        </a>
+      </p>
+    </div>
+
+  </footer>
+
+  </main><!-- fim snap-container -->
+
+  <!-- ═══════════════════════════════════════════════════════
+       LIGHTBOX
+  ════════════════════════════════════════════════════════ -->
+  <div id="lightbox" role="dialog" aria-label="Imagem em tamanho completo" aria-modal="true">
+    <button id="lightbox-close" aria-label="Fechar">✕</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <!-- WhatsApp flutuante -->
+  <a
+    href="https://wa.me/5512996167979?text=Ol%C3%A1%2C+vim+pelo+site.+Gostaria+de+mais+informa%C3%A7%C3%B5es%21"
+    class="whatsapp-float"
+    id="btn-wpp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Fale conosco pelo WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
